@@ -43,7 +43,11 @@
                 </a>
               </li>
               {%- endif %}
-
+              <!-- Link to CV -->
+              <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
+                <a class="nav-link" href="{{ site.baseurl }}/pdf/eq_manifold.pdf" target="_blank">CV
+                </a>
+              </li>
               <!-- Other pages -->
               {%- assign sorted_pages = site.pages | sort: "title" -%}
               {%- for p in sorted_pages -%}
